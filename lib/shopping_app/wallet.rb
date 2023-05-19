@@ -1,4 +1,9 @@
+# TODO: ファイルのinclude(拡張子がないファイル名)
+##equire "lib/ownable"
+require_relative "ownable"
 class Wallet
+  # TODO: モジュールのロード(クラス名)
+  include Ownable
   attr_reader :balance
 
   def initialize(owner)
