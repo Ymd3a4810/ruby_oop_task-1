@@ -41,8 +41,8 @@ class Cart
       if withdraw_price != nil
         # TDDO: 1.2. アイテムのオーナーのウォレットに移されること
         item.owner.wallet.deposit(withdraw_price)
-
-        # TODO: 2. カート内のすべてのアイテムのオーナー権限が、カートのオーナーに移されること
+        # TODO: 2. アイテムのオーナー権限が、カートのオーナーに移されること
+        item.owner = self.owner
       end
       # Customerというオブジェクト => 自分
       puts "#{self.owner.name}, #{self.owner.wallet.balance}"
