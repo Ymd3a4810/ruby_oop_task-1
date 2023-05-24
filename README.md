@@ -29,3 +29,8 @@ https://docs.ruby-lang.org/ja/latest/method/Kernel/m/require.html
 ### require_relative
 "現在のファイルから"の相対パスで指定できる
 https://docs.ruby-lang.org/ja/latest/method/Kernel/m/require_relative.html
+
+
+# 5/24
+## rubyでeachメソッドを使って　一つづつアイテムを取り出す方法
+https://udemy.benesse.co.jp/development/system/ruby-each.html
