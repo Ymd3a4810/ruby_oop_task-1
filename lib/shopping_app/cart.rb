@@ -34,7 +34,7 @@ class Cart
     # TODO: カート内のすべてのアイテムをループする
     @items.each do |item|
       # TODO: 2. オーナー権限が、カートのオーナーに移されること
-      puts item.price
+      #puts item.price
       
       # TODO: 1.1. 購入金額が、カートのオーナーのウォレットから金額を取り出す
       withdraw_price = self.owner.wallet.withdraw(item.price)
@@ -45,14 +45,15 @@ class Cart
         item.owner = self.owner
       end
       # Customerというオブジェクト => 自分
-      puts "#{self.owner.name}, #{self.owner.wallet.balance}"
+      #puts "#{self.owner.name}, #{self.owner.wallet.balance}"
       # Sellerというオブジェクト => お店
-      puts "#{item.owner.name}, #{item.owner.wallet.balance}"
+      #puts "#{item.owner.name}, #{item.owner.wallet.balance}"
 
     end
-    #item.owner.wallet << self.owner.wallet ??
+  
     # 3. TODO: カートの中身が空になること
-    
+    @items.clear
+    #puts @items
     #   - カートの中身（Cart#items）のすべてのアイテムのオーナー権限が、カートのオーナーに移されること。
 
     #   - カートの中身（Cart#items）が空になること。

@@ -3,6 +3,7 @@
 require_relative "ownable"
 class Wallet
   # TODO: モジュールのロード(クラス名)
+  
   include Ownable
   attr_reader :balance
 
